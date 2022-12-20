@@ -1,0 +1,55 @@
+<testsuite failures="0" name="src/test/java/features/headers.feature" skipped="0" tests="3" time="1.646375">
+  <testcase classname="src.test.java.features.headers" name="paass the user request with headres part1" time="0.917311">
+    <system-out>Given header Accept-Encoding = 'gzip, deflate, br' ........................ passed
+And header Accept = '*/*' ................................................. passed
+And header Connection = 'keep-alive' ...................................... passed
+And header User-Agent = 'PostmanRuntime/7.29.2' ........................... passed
+When url 'https://gorest.co.in/public/v1/users' ........................... passed
+And path '30' ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.headers" name="paass the user request with headres part2" time="0.390688">
+    <system-out>Given header Accept-Encoding = 'gzip, deflate, br' ........................ passed
+And header Accept = '*/*' ................................................. passed
+And header Connection = 'keep-alive' ...................................... passed
+And header User-Agent = 'PostmanRuntime/7.29.2' ........................... passed
+When url 'https://gorest.co.in/public/v1/users' ........................... passed
+And path '30' ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def request_headers = {Accept: '*/*', Connection:'keep-alive',Connection:'keep-alive',User-Agent:'PostmanRuntime/7.29.2'} . passed
+Given headers request_headers ............................................. passed
+When url 'https://gorest.co.in/public/v1/users' ........................... passed
+And path '30' ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.headers" name="paass the user request with headres part3" time="0.338375">
+    <system-out>Given header Accept-Encoding = 'gzip, deflate, br' ........................ passed
+And header Accept = '*/*' ................................................. passed
+And header Connection = 'keep-alive' ...................................... passed
+And header User-Agent = 'PostmanRuntime/7.29.2' ........................... passed
+When url 'https://gorest.co.in/public/v1/users' ........................... passed
+And path '30' ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def request_headers = {Accept: '*/*', Connection:'keep-alive',Connection:'keep-alive',User-Agent:'PostmanRuntime/7.29.2'} . passed
+Given headers request_headers ............................................. passed
+When url 'https://gorest.co.in/public/v1/users' ........................... passed
+And path '30' ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* configure headers = {Accept: '*/*', Connection:'keep-alive',Connection:'keep-alive',User-Agent:'PostmanRuntime/7.29.2'} . passed
+When url 'https://gorest.co.in/public/v1/users' ........................... passed
+And path '30' ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

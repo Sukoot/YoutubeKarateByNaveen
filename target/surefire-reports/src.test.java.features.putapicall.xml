@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/features/putapicall.feature" skipped="0" tests="1" time="1.014703">
+  <testcase classname="src.test.java.features.putapicall" name="create user with giving data" time="1.014703">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def tequestPayload = .................................................... passed
+Given path '/public/v1/users/102' ......................................... passed
+And request tequestPayload ................................................ passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.data.id == '#present' ......................................... passed
+And match $.data.name == 'Somu Deshpande' ................................. passed
+And match $.data.email == 'somu_deshpande@howell-vandervort.name' ......... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

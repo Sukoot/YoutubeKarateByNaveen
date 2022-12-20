@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/features/getcall.feature" skipped="0" tests="1" time="1.132898">
+  <testcase classname="src.test.java.features.getcall" name="Calling Payload" time="1.132898">
+    <system-out>Given url 'https://gorest.co.in' .......................................... passed
+Given path '/public/v1/users' ............................................. passed
+* def requestPayload = read('classpath:src/test/resources/payload/user.json') . passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match $.data.id == '#present' ........................................ passed
+And match $.data.email == "sana13@gmail.com" .............................. passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

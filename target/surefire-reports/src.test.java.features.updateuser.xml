@@ -1,0 +1,53 @@
+<testsuite failures="0" name="src/test/java/features/updateuser.feature" skipped="0" tests="2" time="1.446691">
+  <testcase classname="src.test.java.features.updateuser" name="create user with giving data" time="0.987924">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def random_string = ..................................................... passed
+* def randomString = random_string(10) .................................... passed
+* print randonString ...................................................... passed
+* def requestPayload = .................................................... passed
+* set requestPayload.email = randomString + "@gmail.com" .................. passed
+* print requestPayload .................................................... passed
+Given path '/public/v1/users' ............................................. passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match $.data.id == '#present' ......................................... passed
+* def userId = $.data.id .................................................. passed
+* print userId ............................................................ passed
+* def requestPayload = .................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.updateuser" name="create user with giving data" time="0.458766">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def random_string = ..................................................... passed
+* def randomString = random_string(10) .................................... passed
+* print randonString ...................................................... passed
+* def requestPayload = .................................................... passed
+* set requestPayload.email = randomString + "@gmail.com" .................. passed
+* print requestPayload .................................................... passed
+Given path '/public/v1/users' ............................................. passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match $.data.id == '#present' ......................................... passed
+* def userId = $.data.id .................................................. passed
+* print userId ............................................................ passed
+* def requestPayload = .................................................... passed
+* url 'https://gorest.co.in' .............................................. passed
+* def random_string = ..................................................... passed
+* def randomString = random_string(10) .................................... passed
+* print randonString ...................................................... passed
+* def requestPayload = .................................................... passed
+* set requestPayload.email = randomString + "@gmail.com" .................. passed
+* print requestPayload .................................................... passed
+Given path '/public/v1/users/108' ......................................... passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.data.id == '#present' ......................................... passed
+And match $.data.name == 'Subhash' ........................................ passed
+And match $.data.email == requestPayload.email ............................ passed</system-out>
+  </testcase>
+</testsuite>

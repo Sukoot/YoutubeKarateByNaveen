@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/features/postapicall.feature" skipped="0" tests="1" time="1.037433">
+  <testcase classname="src.test.java.features.postapicall" name="create user with giving data" time="1.037433">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def tequestPayload = .................................................... passed
+Given path '/public/v1/users' ............................................. passed
+And request tequestPayload ................................................ passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match $.data.id == '#present' ......................................... passed
+And match $.data.name == 'Subhash' ........................................ passed
+And match $.data.email == 'subhash_verma13@gmail' ......................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

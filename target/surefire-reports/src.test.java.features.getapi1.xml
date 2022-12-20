@@ -1,0 +1,88 @@
+<testsuite failures="2" name="src/test/java/features/getapi1.feature" skipped="0" tests="2" time="0">
+  <testcase classname="src.test.java.features.getapi1" name="get api user details" time="0">
+    <failure message="getapi1.feature:3 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {&#13;&#10;&#9;var env = karate.env;//get system property 'karate.env' karate.log('karate.env sys1&#13;&#10;&#9;if (!env) {&#13;&#10;&#9;&#9;env = 'dev';&#13;&#10;&#9;}&#13;&#10;&#9;var config = {&#13;&#10;&#9;&#9;env: env&#13;&#10;&#9;&#9;myVarName: 'hello karate',&#13;&#10;&#9;&#9;baseUrl: 'https://gorest.co.in'&#13;&#10;&#9;}&#13;&#10;&#9;if (env == 'dev') {&#13;&#10;&#9;&#9;//customize&#13;&#10;&#9;&#9;// e.g. config.foo = 'bar';&#13;&#10;&#9;} else if (env == 'e2e') {&#13;&#10;&#9;&#9;// custome&#13;&#10;&#13;&#10;&#9;}&#13;&#10;&#9;return config&#13;&#10;}, javax.script.ScriptException: &lt;eval&gt;:8:2 Expected comma but found ident&#13;&#10;&#9;&#9;myVarName: 'hello karate',&#13;&#10;&#9;&#9;^ in &lt;eval&gt; at line number 8 at column number 2&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#10;stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getapi1.feature:3 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {&#13;
+	var env = karate.env;//get system property 'karate.env' karate.log('karate.env sys1&#13;
+	if (!env) {&#13;
+		env = 'dev';&#13;
+	}&#13;
+	var config = {&#13;
+		env: env&#13;
+		myVarName: 'hello karate',&#13;
+		baseUrl: 'https://gorest.co.in'&#13;
+	}&#13;
+	if (env == 'dev') {&#13;
+		//customize&#13;
+		// e.g. config.foo = 'bar';&#13;
+	} else if (env == 'e2e') {&#13;
+		// custome&#13;
+&#13;
+	}&#13;
+	return config&#13;
+}, javax.script.ScriptException: &lt;eval&gt;:8:2 Expected comma but found ident&#13;
+		myVarName: 'hello karate',&#13;
+		^ in &lt;eval&gt; at line number 8 at column number 2
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)&#13;
+	at ✽.* scenario init failed (getapi1.feature:3)</failure>
+  </testcase>
+  <testcase classname="src.test.java.features.getapi1" name="get api user negative details" time="0">
+    <failure message="getapi1.feature:20 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {&#13;&#10;&#9;var env = karate.env;//get system property 'karate.env' karate.log('karate.env sys1&#13;&#10;&#9;if (!env) {&#13;&#10;&#9;&#9;env = 'dev';&#13;&#10;&#9;}&#13;&#10;&#9;var config = {&#13;&#10;&#9;&#9;env: env&#13;&#10;&#9;&#9;myVarName: 'hello karate',&#13;&#10;&#9;&#9;baseUrl: 'https://gorest.co.in'&#13;&#10;&#9;}&#13;&#10;&#9;if (env == 'dev') {&#13;&#10;&#9;&#9;//customize&#13;&#10;&#9;&#9;// e.g. config.foo = 'bar';&#13;&#10;&#9;} else if (env == 'e2e') {&#13;&#10;&#9;&#9;// custome&#13;&#10;&#13;&#10;&#9;}&#13;&#10;&#9;return config&#13;&#10;}, javax.script.ScriptException: &lt;eval&gt;:8:2 Expected comma but found ident&#13;&#10;&#9;&#9;myVarName: 'hello karate',&#13;&#10;&#9;&#9;^ in &lt;eval&gt; at line number 8 at column number 2&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#10;stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getapi1.feature:3 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {&#13;
+	var env = karate.env;//get system property 'karate.env' karate.log('karate.env sys1&#13;
+	if (!env) {&#13;
+		env = 'dev';&#13;
+	}&#13;
+	var config = {&#13;
+		env: env&#13;
+		myVarName: 'hello karate',&#13;
+		baseUrl: 'https://gorest.co.in'&#13;
+	}&#13;
+	if (env == 'dev') {&#13;
+		//customize&#13;
+		// e.g. config.foo = 'bar';&#13;
+	} else if (env == 'e2e') {&#13;
+		// custome&#13;
+&#13;
+	}&#13;
+	return config&#13;
+}, javax.script.ScriptException: &lt;eval&gt;:8:2 Expected comma but found ident&#13;
+		myVarName: 'hello karate',&#13;
+		^ in &lt;eval&gt; at line number 8 at column number 2
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)&#13;
+	at ✽.* scenario init failed (getapi1.feature:3)&#13;
+
+* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getapi1.feature:20 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {&#13;
+	var env = karate.env;//get system property 'karate.env' karate.log('karate.env sys1&#13;
+	if (!env) {&#13;
+		env = 'dev';&#13;
+	}&#13;
+	var config = {&#13;
+		env: env&#13;
+		myVarName: 'hello karate',&#13;
+		baseUrl: 'https://gorest.co.in'&#13;
+	}&#13;
+	if (env == 'dev') {&#13;
+		//customize&#13;
+		// e.g. config.foo = 'bar';&#13;
+	} else if (env == 'e2e') {&#13;
+		// custome&#13;
+&#13;
+	}&#13;
+	return config&#13;
+}, javax.script.ScriptException: &lt;eval&gt;:8:2 Expected comma but found ident&#13;
+		myVarName: 'hello karate',&#13;
+		^ in &lt;eval&gt; at line number 8 at column number 2
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)&#13;
+	at ✽.* scenario init failed (getapi1.feature:20)</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.features.deleteapi</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-12-07 04:09:33 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:31]">[1:31] delet user with giving user id </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/features/deleteapi.feature</span><span class="feature-description">Delete user using delete api</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:31]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:31]</span><span class="scenario-name">delet user with giving user id </span>
+</div>
+<div class="scenario-time passed">ms: 1739</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:31]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:31]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://gorest.co.in'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:31]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def random_string =</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">function(s){
+var text = "";
+var pattern = "ASDFGHJUIYTRWEQCGVHNJKIIOIKhgvccvbnmkotrwewsxcvhJKLOLIYTREWEWQSDC";
+for(var i= 0; i&lt;s; i ++)
+text += pattern.charAt(Math.floor(Math.random() * pattern.length()));
+  return text;
+}</div>
+<div class="step-row" data-parent="[1:31]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* def randomString = random_string(10)</div>
+</div>
+<div class="time-cell passed">14</div>
+</div>
+<div class="step-row" data-parent="[1:31]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">* print randonString</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="4">16:09:31.695 [print]</div>
+<div class="step-row" data-parent="[1:31]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">* def requestPayload =</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="5">{
+    "id": 0,
+    "name": "Subhash",
+    "gender": "male",
+    "status": "active"
+}</div>
+<div class="step-row" data-parent="[1:31]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-cell passed">* set requestPayload.email = randomString + "@gmail.com"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1:31]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-cell passed">* print requestPayload</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="7">16:09:31.699 [print] {
+  "id": 0,
+  "name": "Subhash",
+  "gender": "male",
+  "status": "active",
+  "email": "rnnSWUrDIO@gmail.com"
+}</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#1 create user using post call</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Given path '/public/v1/users'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And request requestPayload</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + tokenID</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">946</div>
+</div>
+<div class="preformatted" data-parent="11">16:09:32.107 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 88e8fbe52c57985ccf546879d18dc9b7b506c92a07e4fdefb42d3885d20e3e2f
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 90
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+{"id":0,"name":"Subhash","gender":"male","status":"active","email":"rnnSWUrDIO@gmail.com"}
+
+16:09:32.647 response time in milliseconds: 538.20
+1 &lt; 201
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 77603e28dbc982da-IAD
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Dec 2022 21:09:31 GMT
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=p56r9w4bKTJX8nYk1mNNa%2B%2FxrX7FeiFmv9h2c1Qfx%2BtWj8H2IemS88AS3PbBGixcm7POt8JIE7EN6RgwwV3i%2BM3onPLonMlco34E9DFJNH2OTgSaxR%2BXBieb2jEKMQA%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+1 &lt; etag: W/"72ddbc199111876084e5097b53bdabc8"
+1 &lt; location: https://gorest.co.in/public/v1/users/22710
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 89
+1 &lt; x-ratelimit-reset: 1
+1 &lt; x-request-id: c83c49d8-937c-4a81-9c79-c308389252d5
+1 &lt; x-runtime: 0.058297
+1 &lt; x-xss-protection: 0
+{"meta":null,"data":{"id":22710,"name":"Subhash","email":"rnnSWUrDIO@gmail.com","gender":"male","status":"active"}}</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And match $.data.id == '#present'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment"># fetch the user id from the response</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">* def userId = $.data.id</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* print userId</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="15">16:09:32.652 [print] 22710</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#2delete the same user</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Given path '/public/v1/users/' + userId</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + tokenID</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">When method delete</div>
+</div>
+<div class="time-cell passed">407</div>
+</div>
+<div class="preformatted" data-parent="18">16:09:32.655 request:
+2 &gt; DELETE https://gorest.co.in/public/v1/users/22710
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Bearer 88e8fbe52c57985ccf546879d18dc9b7b506c92a07e4fdefb42d3885d20e3e2f
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: gorest.co.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+
+16:09:33.061 response time in milliseconds: 405.14
+2 &lt; 204
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 77603e2b5f7d8269-IAD
+2 &lt; Cache-Control: no-cache
+2 &lt; Connection: keep-alive
+2 &lt; Date: Wed, 07 Dec 2022 21:09:32 GMT
+2 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2P9rMZgcTG8PZ6lDcfeCacL52afPYRD4lbxv5r8ugVIXvD%2FcjoGbRrKKbR0lLa4NUuQ2Im3wezptPbS1Z9lvNMF1Zc8b8NViSkNVfTR%2F4j2xLhzgbwGO0PnALmGvOQE%3D"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+2 &lt; referrer-policy: strict-origin-when-cross-origin
+2 &lt; vary: Origin
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-download-options: noopen
+2 &lt; x-frame-options: SAMEORIGIN
+2 &lt; x-permitted-cross-domain-policies: none
+2 &lt; x-ratelimit-limit: 90
+2 &lt; x-ratelimit-remaining: 89
+2 &lt; x-ratelimit-reset: 2
+2 &lt; x-request-id: 06ee9d96-46ee-4e99-8150-133700e8734d
+2 &lt; x-runtime: 0.075435
+2 &lt; x-xss-protection: 0</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment"># 3. get the same user id with get call</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Given url 'https://gorest.co.in/public/v1/users/' + userId</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">349</div>
+</div>
+<div class="preformatted" data-parent="21">16:09:33.065 request:
+3 &gt; GET https://gorest.co.in/public/v1/users/22710
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: gorest.co.in
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+
+16:09:33.412 response time in milliseconds: 346.13
+3 &lt; 404
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; CF-RAY: 77603e2dee295934-IAD
+3 &lt; Cache-Control: no-cache
+3 &lt; Connection: keep-alive
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Date: Wed, 07 Dec 2022 21:09:32 GMT
+3 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CwpLo3WEI7rdaYwCAOzLN53LqGTkZdY1B8Bhjj40mLnZoOyFOPFQ7LpIOHKhfGU%2BseTbLAe0iavbF1Lyk95bi%2Bsbqc09wFCm%2FWD4ne90%2B%2F1HLfZZrSGYcG%2BjdS0%2FjqU%3D"}],"group":"cf-nel","max_age":604800}
+3 &lt; Server: cloudflare
+3 &lt; Transfer-Encoding: chunked
+3 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+3 &lt; referrer-policy: strict-origin-when-cross-origin
+3 &lt; vary: Origin
+3 &lt; x-content-type-options: nosniff
+3 &lt; x-download-options: noopen
+3 &lt; x-frame-options: SAMEORIGIN
+3 &lt; x-permitted-cross-domain-policies: none
+3 &lt; x-request-id: b18111cd-c84e-4d12-b8f1-30eca751adcd
+3 &lt; x-runtime: 0.013868
+3 &lt; x-xss-protection: 0
+{"meta":null,"data":{"message":"Resource not found"}}</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">And match $.data.message == 'Resource not found'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

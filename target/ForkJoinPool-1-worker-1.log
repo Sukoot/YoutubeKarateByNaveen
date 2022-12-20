@@ -1,0 +1,226 @@
+16:09:31.695 [print]
+16:09:31.699 [print] {
+  "id": 0,
+  "name": "Subhash",
+  "gender": "male",
+  "status": "active",
+  "email": "rnnSWUrDIO@gmail.com"
+}
+
+16:09:32.107 request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 88e8fbe52c57985ccf546879d18dc9b7b506c92a07e4fdefb42d3885d20e3e2f
+1 > Connection: Keep-Alive
+1 > Content-Length: 90
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+{"id":0,"name":"Subhash","gender":"male","status":"active","email":"rnnSWUrDIO@gmail.com"}
+
+16:09:32.647 response time in milliseconds: 538.20
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 77603e28dbc982da-IAD
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 07 Dec 2022 21:09:31 GMT
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=p56r9w4bKTJX8nYk1mNNa%2B%2FxrX7FeiFmv9h2c1Qfx%2BtWj8H2IemS88AS3PbBGixcm7POt8JIE7EN6RgwwV3i%2BM3onPLonMlco34E9DFJNH2OTgSaxR%2BXBieb2jEKMQA%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < etag: W/"72ddbc199111876084e5097b53bdabc8"
+1 < location: https://gorest.co.in/public/v1/users/22710
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 89
+1 < x-ratelimit-reset: 1
+1 < x-request-id: c83c49d8-937c-4a81-9c79-c308389252d5
+1 < x-runtime: 0.058297
+1 < x-xss-protection: 0
+{"meta":null,"data":{"id":22710,"name":"Subhash","email":"rnnSWUrDIO@gmail.com","gender":"male","status":"active"}}
+
+16:09:32.652 [print] 22710
+16:09:32.655 request:
+2 > DELETE https://gorest.co.in/public/v1/users/22710
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 88e8fbe52c57985ccf546879d18dc9b7b506c92a07e4fdefb42d3885d20e3e2f
+2 > Connection: Keep-Alive
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+
+16:09:33.061 response time in milliseconds: 405.14
+2 < 204
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 77603e2b5f7d8269-IAD
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Date: Wed, 07 Dec 2022 21:09:32 GMT
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2P9rMZgcTG8PZ6lDcfeCacL52afPYRD4lbxv5r8ugVIXvD%2FcjoGbRrKKbR0lLa4NUuQ2Im3wezptPbS1Z9lvNMF1Zc8b8NViSkNVfTR%2F4j2xLhzgbwGO0PnALmGvOQE%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-download-options: noopen
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 90
+2 < x-ratelimit-remaining: 89
+2 < x-ratelimit-reset: 2
+2 < x-request-id: 06ee9d96-46ee-4e99-8150-133700e8734d
+2 < x-runtime: 0.075435
+2 < x-xss-protection: 0
+
+16:09:33.065 request:
+3 > GET https://gorest.co.in/public/v1/users/22710
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: gorest.co.in
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+
+16:09:33.412 response time in milliseconds: 346.13
+3 < 404
+3 < CF-Cache-Status: DYNAMIC
+3 < CF-RAY: 77603e2dee295934-IAD
+3 < Cache-Control: no-cache
+3 < Connection: keep-alive
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Wed, 07 Dec 2022 21:09:32 GMT
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CwpLo3WEI7rdaYwCAOzLN53LqGTkZdY1B8Bhjj40mLnZoOyFOPFQ7LpIOHKhfGU%2BseTbLAe0iavbF1Lyk95bi%2Bsbqc09wFCm%2FWD4ne90%2B%2F1HLfZZrSGYcG%2BjdS0%2FjqU%3D"}],"group":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < Transfer-Encoding: chunked
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+3 < referrer-policy: strict-origin-when-cross-origin
+3 < vary: Origin
+3 < x-content-type-options: nosniff
+3 < x-download-options: noopen
+3 < x-frame-options: SAMEORIGIN
+3 < x-permitted-cross-domain-policies: none
+3 < x-request-id: b18111cd-c84e-4d12-b8f1-30eca751adcd
+3 < x-runtime: 0.013868
+3 < x-xss-protection: 0
+{"meta":null,"data":{"message":"Resource not found"}}
+
+ion: 0
+{"meta":null,"data":{"id":30,"name":"Lai Nehru","email":"lai_nehru@bernhard.name","gender":"male","status":"active"}}
+
+23:51:28.783 [print] {
+  "data": {
+    "gender": "male",
+    "name": "Lai Nehru",
+    "id": 30,
+    "email": "lai_nehru@bernhard.name",
+    "status": "active"
+  },
+  "meta": null
+}
+
+ec 2022 04:12:09 GMT
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UigEdJS0%2F%2BYOUNsUJNnMiW7nJnhtBxuS4btcFuhvBJglQyhvamrePlBgjJODiNeXk8CbOfxXwSBmuF7l8tzQrDmd2SheetD6fmSdqCDQwhuDJkwsJNdF3b%2FUP6mnwhY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < etag: W/"ae06ce2085b79fc842b6cf99a0458636"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 217
+1 < x-pagination-total: 2168
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 3ccb2f69-7daf-46cc-8cfa-c947465bc36c
+1 < x-runtime: 0.020474
+1 < x-xss-protection: 0
+[{"id":4338,"name":"Shubha Ganaka","email":"shubha_ganaka@kohler.biz","gender":"female","status":"active"},{"id":4334,"name":"Bhushan Reddy","email":"bhushan_reddy@orn.com","gender":"female","status":"active"},{"id":4330,"name":"Pres. Ranjeet Devar","email":"pres_devar_ranjeet@trantow.biz","gender":"female","status":"active"},{"id":4329,"name":"Gopal Patel","email":"patel_gopal@turcotte.name","gender":"female","status":"active"},{"id":4326,"name":"Durga Nambeesan","email":"nambeesan_durga@mayert.name","gender":"female","status":"active"},{"id":4322,"name":"Aaratrika Varman","email":"varman_aaratrika@schiller-lind.io","gender":"female","status":"active"},{"id":4321,"name":"Chanda Iyengar","email":"chanda_iyengar@schuppe.net","gender":"female","status":"active"},{"id":4320,"name":"Sen. Udai Bhattathiri","email":"udai_sen_bhattathiri@steuber-parisian.biz","gender":"female","status":"active"},{"id":4318,"name":"Ms. Durgeshwari Jain","email":"ms_jain_durgeshwari@metz.org","gender":"female","status":"active"},{"id":4316,"name":"Anandamayi Trivedi","email":"anandamayi_trivedi@legros-lueilwitz.name","gender":"male","status":"active"}]
+
+23:12:11.024 [print] [
+  {
+    "gender": "female",
+    "name": "Shubha Ganaka",
+    "id": 4338,
+    "email": "shubha_ganaka@kohler.biz",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Bhushan Reddy",
+    "id": 4334,
+    "email": "bhushan_reddy@orn.com",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Pres. Ranjeet Devar",
+    "id": 4330,
+    "email": "pres_devar_ranjeet@trantow.biz",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Gopal Patel",
+    "id": 4329,
+    "email": "patel_gopal@turcotte.name",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Durga Nambeesan",
+    "id": 4326,
+    "email": "nambeesan_durga@mayert.name",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Aaratrika Varman",
+    "id": 4322,
+    "email": "varman_aaratrika@schiller-lind.io",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Chanda Iyengar",
+    "id": 4321,
+    "email": "chanda_iyengar@schuppe.net",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Sen. Udai Bhattathiri",
+    "id": 4320,
+    "email": "udai_sen_bhattathiri@steuber-parisian.biz",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Ms. Durgeshwari Jain",
+    "id": 4318,
+    "email": "ms_jain_durgeshwari@metz.org",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Anandamayi Trivedi",
+    "id": 4316,
+    "email": "anandamayi_trivedi@legros-lueilwitz.name",
+    "status": "active"
+  }
+]
+
+23:12:11.032 [print] 10
